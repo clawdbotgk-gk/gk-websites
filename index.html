@@ -3,109 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GK Websites - Modern web development for small and medium businesses. Fast, professional websites that work.">
     <title>GK Websites | Web Development for Small Businesses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <style>
+        /* Critical CSS for faster initial paint */
+        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: #fff; color: #0a0a0a; padding: 12px 24px; border-radius: 8px; font-weight: 600; z-index: 9999; }
+        .skip-link:focus { top: 16px; }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <nav class="navbar" aria-label="Main navigation">
         <div class="container">
-            <a href="index.html" class="logo">GK<span>Websites</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="clients.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <a href="index.html" class="logo" aria-label="GK Websites Home">GK<span>Websites</span></a>
+            <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="main-menu" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem" class="active" aria-current="page">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                <li role="none"><a href="services.html" role="menuitem">Services</a></li>
+                <li role="none"><a href="clients.html" role="menuitem">Work</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Websites <span class="gradient-text">That Work</span></h1>
-                <p class="hero-subtitle">Modern websites for small and medium businesses. Fast, simple, and built to grow your business.</p>
-                <div class="hero-btns">
-                    <a href="contact.html" class="btn btn-primary">Let's Talk</a>
-                    <a href="services.html" class="btn btn-secondary">What We Do</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="code-window">
-                    <div class="window-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
+    <main id="main-content">
+        <header class="hero">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Websites <span class="gradient-text">That Work</span></h1>
+                    <p class="hero-subtitle">Modern websites for small and medium businesses. Fast, simple, and built to grow your business.</p>
+                    <div class="hero-btns">
+                        <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+                        <a href="services.html" class="btn btn-secondary">What We Do</a>
                     </div>
-                    <pre><code><span class="keyword">const</span> <span class="var">website</span> = {
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot red" aria-label="Window close"></span>
+                            <span class="dot yellow" aria-label="Window minimize"></span>
+                            <span class="dot green" aria-label="Window maximize"></span>
+                        </div>
+                        <pre><code><span class="keyword">const</span> <span class="var">website</span> = {
   <span class="property">design</span>: <span class="string">"modern"</span>,
   <span class="property">performance</span>: <span class="string">"fast"</span>,
   <span class="property">focus</span>: <span class="string">"SME"</span>
 };</code></pre>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="badge">What We Offer</span>
-                <h2>Websites Built <span class="gradient-text">Right</span></h2>
+        <section class="features" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="badge">What We Offer</span>
+                    <h2 id="features-title">Websites Built <span class="gradient-text">Right</span></h2>
+                </div>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🚀</div>
+                        <h3>Fast & Responsive</h3>
+                        <p class="card-text">Websites that load quickly and work perfectly on any device, from phones to desktops.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🎨</div>
+                        <h3>Clean Design</h3>
+                        <p class="card-text">Simple, professional designs that represent your business well and help convert visitors.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">📱</div>
+                        <h3>Mobile Ready</h3>
+                        <p class="card-text">Every site we build works flawlessly on mobile phones where most people browse.</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon" aria-hidden="true">🔧</div>
+                        <h3>Ongoing Support</h3>
+                        <p class="card-text">We're here when you need updates, fixes, or changes. Straightforward support without complications.</p>
+                    </article>
+                </div>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Fast & Responsive</h3>
-                    <p>Websites that load quickly and work perfectly on any device, from phones to desktops.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Clean Design</h3>
-                    <p>Simple, professional designs that represent your business well and help convert visitors.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Mobile Ready</h3>
-                    <p>Every site we build works flawlessly on mobile phones where most people browse.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>Ongoing Support</h3>
-                    <p>We're here when you need updates, fixes, or changes. Straightforward support without complications.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Need a New Website?</h2>
-                <p>Let's discuss your project. Based in Belfast, working with businesses across Northern Ireland.</p>
-                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 id="cta-title">Need a New Website?</h2>
+                    <p>Let's discuss your project. Based in Belfast, working with businesses across Northern Ireland.</p>
+                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">GK<span>Websites</span></a>
+                    <a href="index.html" class="logo" aria-label="GK Websites Home">GK<span>Websites</span></a>
                     <p>Web development for small and medium businesses.</p>
                 </div>
-                <div class="footer-links">
+                <nav class="footer-links" aria-label="Footer navigation">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -114,10 +125,10 @@
                         <li><a href="clients.html">Work</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="footer-contact">
                     <h4>Get In Touch</h4>
-                    <p>hello@gkwebsites.co.uk</p>
+                    <p><a href="mailto:hello@gkwebsites.co.uk">hello@gkwebsites.co.uk</a></p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -126,6 +137,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
