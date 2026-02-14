@@ -7,3 +7,4 @@
 !*.js
 !*.toml
 !.gitignore
+.vercel
