@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files
+!*.html
+!*.css
+!*.js
+!*.toml
+!.gitignore
