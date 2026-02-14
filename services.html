@@ -3,149 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Services | GK Websites - Business websites, e-commerce stores, apps, and ongoing support for SMEs.">
     <title>Services | GK Websites</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-    <style>.skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: #fff; color: #0a0a0a; padding: 12px 24px; border-radius: 8px; font-weight: 600; z-index: 9999; } .skip-link:focus { top: 16px; }</style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <nav class="navbar" aria-label="Main navigation">
+    <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="logo" aria-label="GK Websites Home">GK<span>Websites</span></a>
-            <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="main-menu" role="menubar">
-                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
-                <li role="none"><a href="about.html" role="menuitem">About</a></li>
-                <li role="none"><a href="services.html" role="menuitem" class="active" aria-current="page">Services</a></li>
-                <li role="none"><a href="clients.html" role="menuitem">Work</a></li>
-                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            <a href="index.html" class="logo">GK<span>Websites</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="clients.html">Work</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <main id="main-content">
-        <header class="page-header">
-            <div class="container">
-                <span class="badge">What We Do</span>
-                <h1>Websites & Apps <span class="gradient-text">For SMEs</span></h1>
-                <p>Plain English, clear pricing, quality results.</p>
-            </div>
-        </header>
+    <section class="page-header">
+        <div class="container">
+            <span class="badge">What We Do</span>
+            <h1>Websites & Apps <span class="gradient-text">For SMEs</span></h1>
+            <p>Plain English, clear pricing, quality results.</p>
+        </div>
+    </section>
 
-        <section class="services-main" aria-labelledby="services-title">
-            <div class="container">
-                <h2 id="services-title" class="visually-hidden">Our Services</h2>
-                <div class="services-grid">
-                    <article class="service-card large">
-                        <div class="service-icon" aria-hidden="true">🎯</div>
-                        <h3>Business Websites</h3>
-                        <p class="card-text">Professional websites for small and medium businesses. Fast, mobile-friendly, and easy to manage.</p>
-                        <ul class="service-features" aria-label="Business website features">
-                            <li>Modern, clean design</li>
-                            <li>Mobile responsive</li>
-                            <li>Easy to update</li>
-                            <li>Fast loading</li>
-                            <li>Contact forms & maps</li>
-                            <li>SEO friendly</li>
-                        </ul>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">🛒</div>
-                        <h3>E-Commerce Stores</h3>
-                        <p class="card-text">Online stores that are simple to manage and easy for customers to shop from.</p>
-                        <ul class="service-features" aria-label="E-commerce features">
-                            <li>Simple product management</li>
-                            <li>Secure checkout</li>
-                            <li>Mobile friendly</li>
-                        </ul>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">📱</div>
-                        <h3>App Development</h3>
-                        <p class="card-text">Mobile apps and web apps for businesses that need more than a website.</p>
-                        <ul class="service-features" aria-label="App development features">
-                            <li>iOS & Android apps</li>
-                            <li>Web applications</li>
-                            <li>App integrations</li>
-                        </ul>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon" aria-hidden="true">🔧</div>
-                        <h3>Updates & Support</h3>
-                        <p class="card-text">Keep your site running smoothly with straightforward updates and support.</p>
-                        <ul class="service-features" aria-label="Support features">
-                            <li>Content changes</li>
-                            <li>Security updates</li>
-                            <li>Quick fixes</li>
-                            <li>No complicated tiers</li>
-                        </ul>
-                    </article>
+    <section class="services-main">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card large">
+                    <div class="service-icon">🎯</div>
+                    <h3>Business Websites</h3>
+                    <p>Professional websites for small and medium businesses. Fast, mobile-friendly, and easy to manage.</p>
+                    <ul class="service-features">
+                        <li>Modern, clean design</li>
+                        <li>Mobile responsive</li>
+                        <li>Easy to update</li>
+                        <li>Fast loading</li>
+                        <li>Contact forms & maps</li>
+                        <li>SEO friendly</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛒</div>
+                    <h3>E-Commerce Stores</h3>
+                    <p>Online stores that are simple to manage and easy for customers to shop from.</p>
+                    <ul class="service-features">
+                        <li>Simple product management</li>
+                        <li>Secure checkout</li>
+                        <li>Mobile friendly</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>App Development</h3>
+                    <p>Mobile apps and web apps for businesses that need more than a website.</p>
+                    <ul class="service-features">
+                        <li>iOS & Android apps</li>
+                        <li>Web applications</li>
+                        <li>App integrations</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Updates & Support</h3>
+                    <p>Keep your site running smoothly with straightforward updates and support.</p>
+                    <ul class="service-features">
+                        <li>Content changes</li>
+                        <li>Security updates</li>
+                        <li>Quick fixes</li>
+                        <li>No complicated tiers</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="process" aria-labelledby="process-title">
-            <div class="container">
-                <div class="section-header">
-                    <span class="badge">How We Work</span>
-                    <h2 id="process-title">Simple <span class="gradient-text">Process</span></h2>
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">How We Work</span>
+                <h2>Simple <span class="gradient-text">Process</span></h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Chat</h3>
+                        <p>Tell us what you need. We'll explain what's possible and give you a clear quote.</p>
+                    </div>
                 </div>
-                <div class="process-steps">
-                    <article class="process-step">
-                        <div class="step-number" aria-hidden="true">01</div>
-                        <div class="step-content">
-                            <h3>Chat</h3>
-                            <p>Tell us what you need. We'll explain what's possible and give you a clear quote.</p>
-                        </div>
-                    </article>
-                    <article class="process-step">
-                        <div class="step-number" aria-hidden="true">02</div>
-                        <div class="step-content">
-                            <h3>Build</h3>
-                            <p>We build your website or app. We keep you updated and explain everything in plain English.</p>
-                        </div>
-                    </article>
-                    <article class="process-step">
-                        <div class="step-number" aria-hidden="true">03</div>
-                        <div class="step-content">
-                            <h3>Launch</h3>
-                            <p>We launch your site. We're here for ongoing support when you need it.</p>
-                        </div>
-                    </article>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Build</h3>
+                        <p>We build your website or app. We keep you updated and explain everything in plain English.</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Launch</h3>
+                        <p>We launch your site. We're here for ongoing support when you need it.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="cta" aria-labelledby="cta-title">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 id="cta-title">Need a Website or App?</h2>
-                    <p>Let's discuss your project. Based in Belfast, working with businesses across Northern Ireland.</p>
-                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-                </div>
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need a Website or App?</h2>
+                <p>Let's discuss your project. Based in Belfast, working with businesses across Northern Ireland.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo" aria-label="GK Websites Home">GK<span>Websites</span></a>
+                    <a href="index.html" class="logo">GK<span>Websites</span></a>
                     <p>Web development for small and medium businesses.</p>
                 </div>
-                <nav class="footer-links" aria-label="Footer navigation">
+                <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -154,10 +146,10 @@
                         <li><a href="clients.html">Work</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                </nav>
+                </div>
                 <div class="footer-contact">
                     <h4>Get In Touch</h4>
-                    <p><a href="mailto:hello@gkwebsites.co.uk">hello@gkwebsites.co.uk</a></p>
+                    <p>hello@gkwebsites.co.uk</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -166,6 +158,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js" defer></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
