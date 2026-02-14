@@ -1,142 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GK Websites - Modern web development for small and medium businesses. Fast, professional websites that work.">
-    <title>GK Websites | Web Development for Small Businesses</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-    <style>
-        /* Critical CSS for faster initial paint */
-        .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); background: #fff; color: #0a0a0a; padding: 12px 24px; border-radius: 8px; font-weight: 600; z-index: 9999; }
-        .skip-link:focus { top: 16px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GK Websites - Premium Web Design & Development Agency. We craft stunning, high-performance websites that drive results.">
+  <title>GK Websites - Premium Web Design Agency</title>
+  
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Google Fonts - Inter & Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-brand">
+        <span class="brand-icon">GK</span>
+        <span class="brand-text">GK Websites</span>
+      </a>
+      
+      <div class="navbar-menu" id="navbarMenu">
+        <ul class="navbar-nav">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+        <div class="navbar-actions">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+      </div>
+      
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
 
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="container">
-            <a href="index.html" class="logo" aria-label="GK Websites Home">GK<span>Websites</span></a>
-            <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links" id="main-menu" role="menubar">
-                <li role="none"><a href="index.html" role="menuitem" class="active" aria-current="page">Home</a></li>
-                <li role="none"><a href="about.html" role="menuitem">About</a></li>
-                <li role="none"><a href="services.html" role="menuitem">Services</a></li>
-                <li role="none"><a href="clients.html" role="menuitem">Work</a></li>
-                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid-overlay"></div>
+      <div class="hero-gradient"></div>
+    </div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for new projects</span>
+        </div>
+        
+        <h1 class="hero-title">
+          We Build <span class="highlight">Digital Experiences</span><br>
+          That <span class="highlight-underline">Drive Growth</span>
+        </h1>
+        
+        <p class="hero-description">
+          Award-winning web design agency crafting stunning, high-performance websites that transform brands and deliver measurable business results.
+        </p>
+        
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <span>Start Your Project</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#work" class="btn btn-outline btn-lg">
+            <span>View Portfolio</span>
+          </a>
+        </div>
+        
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-value" data-target="150">0</span><span class="metric-suffix">+</span>
+            <span class="metric-label">Projects</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-value" data-target="50">0</span><span class="metric-suffix">+</span>
+            <span class="metric-label">Clients</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-value" data-target="8">0</span><span class="metric-suffix">+</span>
+            <span class="metric-label">Years</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <span class="metric-value" data-target="4.9">0</span>
+            <span class="metric-label">Rating</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-card hero-card-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <span class="card-text">Lightning Fast</span>
+        </div>
+        <div class="hero-card hero-card-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <span class="card-text">Secure & Scalable</span>
+        </div>
+        <div class="hero-card hero-card-3">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <span class="card-text">On-Time Delivery</span>
+        </div>
+        <div class="hero-card hero-card-4">
+          <div class="card-avatar-stack">
+            <img src="https://i.pravatar.cc/100?img=1" alt="Client">
+            <img src="https://i.pravatar.cc/100?img=2" alt="Client">
+            <img src="https://i.pravatar.cc/100?img=3" alt="Client">
+          </div>
+          <span class="card-text">500+ Happy Clients</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section - Bento Grid -->
+  <section class="services-section" id="services">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Our Services</span>
+        <h2 class="section-title">Everything You Need to <span class="highlight-text">Succeed Online</span></h2>
+        <p class="section-description">From concept to launch, we handle every aspect of your digital presence with precision and passion.</p>
+      </div>
+      
+      <div class="bento-grid">
+        <!-- Large Feature Card -->
+        <div class="bento-card bento-large">
+          <div class="bento-card-header">
+            <div class="bento-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <span class="bento-tag">Most Popular</span>
+          </div>
+          <h3 class="bento-title">Custom Web Design</h3>
+          <p class="bento-description">Stunning, user-centric designs that capture your brand's essence and engage your audience from the first glance.</p>
+          <ul class="bento-features">
+            <li>UI/UX Design</li>
+            <li>Brand Identity</li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+        
+        <!-- Medium Card -->
+        <div class="bento-card bento-medium">
+          <div class="bento-icon-lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3 class="bento-title">Development</h3>
+          <p class="bento-description">Clean, efficient code built on modern frameworks.</p>
+        </div>
+        
+        <!-- Medium Card -->
+        <div class="bento-card bento-medium">
+          <div class="bento-icon-lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="9" y1="21" x2="9" y2="9"/>
+            </svg>
+          </div>
+          <h3 class="bento-title">E-Commerce</h3>
+          <p class="bento-description">Powerful online stores that drive sales.</p>
+        </div>
+        
+        <!-- Small Card -->
+        <div class="bento-card bento-small">
+          <div class="bento-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+          </div>
+          <span class="bento-mini-title">Performance</span>
+        </div>
+        
+        <!-- Small Card -->
+        <div class="bento-card bento-small">
+          <div class="bento-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="M21 21l-4.35-4.35"/>
+            </svg>
+          </div>
+          <span class="bento-mini-title">SEO</span>
+        </div>
+        
+        <!-- Small Card -->
+        <div class="bento-card bento-small">
+          <div class="bento-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2"/>
+              <line x1="12" y1="18" x2="12" y2="18"/>
+            </svg>
+          </div>
+          <span class="bento-mini-title">Mobile</span>
+        </div>
+        
+        <!-- Small Card -->
+        <div class="bento-card bento-small">
+          <div class="bento-icon-sm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+          </div>
+          <span class="bento-mini-title">Cloud</span>
+        </div>
+        
+        <!-- Wide Card -->
+        <div class="bento-card bento-wide">
+          <div class="bento-card-inner">
+            <div class="bento-wide-content">
+              <h3 class="bento-title">Maintenance & Support</h3>
+              <p class="bento-description">Ongoing support to keep your site secure and running smoothly.</p>
+            </div>
+            <div class="bento-wide-action">
+              <a href="#contact" class="btn btn-outline btn-sm">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section class="work-section" id="work">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Projects We're <span class="highlight-text">Proud Of</span></h2>
+        <p class="section-description">A selection of our recent work across various industries.</p>
+      </div>
+      
+      <div class="work-grid">
+        <div class="work-card work-featured">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80" alt="TechCorp Platform" class="work-image">
+          <div class="work-overlay">
+            <div class="work-info">
+              <span class="work-category">SaaS Platform</span>
+              <h3 class="work-title">TechCorp Dashboard</h3>
+              <a href="#" class="work-link">
+                View Case Study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="work-card">
+          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80" alt="Fashion Store" class="work-image">
+          <div class="work-overlay">
+            <div class="work-info">
+              <span class="work-category">E-Commerce</span>
+              <h3 class="work-title">Luxe Fashion</h3>
+              <a href="#" class="work-link">
+                View Case Study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="work-card">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" alt="Startup Landing" class="work-image">
+          <div class="work-overlay">
+            <div class="work-info">
+              <span class="work-category">Startup</span>
+              <h3 class="work-title">FinStart App</h3>
+              <a href="#" class="work-link">
+                View Case Study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="work-card">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Corporate Website" class="work-image">
+          <div class="work-overlay">
+            <div class="work-info">
+              <span class="work-category">Corporate</span>
+              <h3 class="work-title">Apex Consulting</h3>
+              <a href="#" class="work-link">
+                View Case Study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="work-card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="Portfolio" class="work-image">
+          <div class="work-overlay">
+            <div class="work-info">
+              <span class="work-category">Portfolio</span>
+              <h3 class="work-title">Creative Studio</h3>
+              <a href="#" class="work-link">
+                View Case Study
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="work-cta">
+        <a href="#" class="btn btn-outline btn-lg">View All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">What Our <span class="highlight-text">Clients Say</span></h2>
+        <p class="section-description">Don't just take our word for it.</p>
+      </div>
+      
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+          <blockquote class="testimonial-quote">
+            "GK Websites transformed our online presence completely. The new design increased our conversions by 40% within the first month."
+          </blockquote>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/100?img=5" alt="Sarah Johnson" class="author-avatar">
+            <div class="author-info">
+              <span class="author-name">Sarah Johnson</span>
+              <span class="author-role">CEO, TechStart Inc.</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+          <blockquote class="testimonial-quote">
+            "Working with GK Websites was a game-changer. They built us a stunning online store that's both beautiful and highly functional."
+          </blockquote>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/100?img=6" alt="Michael Chen" class="author-avatar">
+            <div class="author-info">
+              <span class="author-name">Michael Chen</span>
+              <span class="author-role">Founder, Luxe Fashion</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+          <blockquote class="testimonial-quote">
+            "Professional, creative, and incredibly talented. GK Websites delivered beyond our expectations."
+          </blockquote>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/100?img=7" alt="Emily Watson" class="author-avatar">
+            <div class="author-info">
+              <span class="author-name">Emily Watson</span>
+              <span class="author-role">Marketing Director, Apex</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section - Enhanced -->
+  <section class="cta-section" id="contact">
+    <div class="cta-container">
+      <div class="cta-bg">
+        <div class="cta-circle cta-circle-1"></div>
+        <div class="cta-circle cta-circle-2"></div>
+        <div class="cta-circle cta-circle-3"></div>
+      </div>
+      
+      <div class="cta-content">
+        <span class="cta-badge">Let's Work Together</span>
+        <h2 class="cta-title">Ready to Transform Your <span class="highlight-text">Online Presence?</span></h2>
+        <p class="cta-description">Get in touch and let's create something amazing together.</p>
+        
+        <div class="cta-actions">
+          <a href="mailto:hello@gkwebsites.com" class="btn btn-primary btn-lg">
+            <span>Start Your Project</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="tel:+1234567890" class="btn btn-outline-light btn-lg">
+            <span>Schedule a Call</span>
+          </a>
+        </div>
+        
+        <div class="cta-trust">
+          <div class="trust-avatars">
+            <img src="https://i.pravatar.cc/60?img=1" alt="Client">
+            <img src="https://i.pravatar.cc/60?img=2" alt="Client">
+            <img src="https://i.pravatar.cc/60?img=3" alt="Client">
+            <img src="https://i.pravatar.cc/60?img=4" alt="Client">
+          </div>
+          <p class="trust-text">Join <strong>500+</strong> satisfied clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer - Enhanced -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <span class="brand-icon">GK</span>
+            <span>GK Websites</span>
+          </a>
+          <p class="footer-tagline">Premium web design agency crafting stunning digital experiences that drive results.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.0 1-7 2c64 0 9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links-grid">
+          <div class="footer-column">
+            <h4 class="footer-heading">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Web Design</a></li>
+              <li><a href="#services">Development</a></li>
+              <li><a href="#services">E-Commerce</a></li>
+              <li><a href="#services">SEO & Performance</a></li>
             </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4 class="footer-heading">Company</h4>
+            <ul class="footer-links">
+              <li><a href="#work">Our Work</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-column">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-links">
+              <li><a href="mailto:hello@gkwebsites.com">hello@gkwebsites.com</a></li>
+              <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+              <li><a href="#">London, UK</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
-
-    <main id="main-content">
-        <header class="hero">
-            <div class="hero-bg" aria-hidden="true"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Websites <span class="gradient-text">That Work</span></h1>
-                    <p class="hero-subtitle">Modern websites for small and medium businesses. Fast, simple, and built to grow your business.</p>
-                    <div class="hero-btns">
-                        <a href="contact.html" class="btn btn-primary">Let's Talk</a>
-                        <a href="services.html" class="btn btn-secondary">What We Do</a>
-                    </div>
-                </div>
-                <div class="hero-visual" aria-hidden="true">
-                    <div class="code-window">
-                        <div class="window-header">
-                            <span class="dot red" aria-label="Window close"></span>
-                            <span class="dot yellow" aria-label="Window minimize"></span>
-                            <span class="dot green" aria-label="Window maximize"></span>
-                        </div>
-                        <pre><code><span class="keyword">const</span> <span class="var">website</span> = {
-  <span class="property">design</span>: <span class="string">"modern"</span>,
-  <span class="property">performance</span>: <span class="string">"fast"</span>,
-  <span class="property">focus</span>: <span class="string">"SME"</span>
-};</code></pre>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <section class="features" aria-labelledby="features-title">
-            <div class="container">
-                <div class="section-header">
-                    <span class="badge">What We Offer</span>
-                    <h2 id="features-title">Websites Built <span class="gradient-text">Right</span></h2>
-                </div>
-                <div class="features-grid">
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">🚀</div>
-                        <h3>Fast & Responsive</h3>
-                        <p class="card-text">Websites that load quickly and work perfectly on any device, from phones to desktops.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">🎨</div>
-                        <h3>Clean Design</h3>
-                        <p class="card-text">Simple, professional designs that represent your business well and help convert visitors.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">📱</div>
-                        <h3>Mobile Ready</h3>
-                        <p class="card-text">Every site we build works flawlessly on mobile phones where most people browse.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="feature-icon" aria-hidden="true">🔧</div>
-                        <h3>Ongoing Support</h3>
-                        <p class="card-text">We're here when you need updates, fixes, or changes. Straightforward support without complications.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta" aria-labelledby="cta-title">
-            <div class="container">
-                <div class="cta-content">
-                    <h2 id="cta-title">Need a New Website?</h2>
-                    <p>Let's discuss your project. Based in Belfast, working with businesses across Northern Ireland.</p>
-                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo" aria-label="GK Websites Home">GK<span>Websites</span></a>
-                    <p>Web development for small and medium businesses.</p>
-                </div>
-                <nav class="footer-links" aria-label="Footer navigation">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="clients.html">Work</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="footer-contact">
-                    <h4>Get In Touch</h4>
-                    <p><a href="mailto:hello@gkwebsites.co.uk">hello@gkwebsites.co.uk</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 GK Websites.</p>
-            </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 GK Websites. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/main.js" defer></script>
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
