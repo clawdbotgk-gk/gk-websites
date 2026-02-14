@@ -33,7 +33,7 @@
           <li><a href="#about" class="nav-link">About</a></li>
         </ul>
         <div class="navbar-actions">
-          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#brief-form" class="btn btn-primary">Send Your Brief</a>
         </div>
       </div>
       
@@ -69,8 +69,8 @@
         </p>
         
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary btn-lg">
-            <span>Start Your Project</span>
+          <a href="#brief-form" class="btn btn-primary btn-lg">
+            <span>Send Your Brief</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -443,17 +443,17 @@
       <div class="cta-content">
         <span class="cta-badge">Let's Work Together</span>
         <h2 class="cta-title">Ready to Transform Your <span class="highlight-text">Online Presence?</span></h2>
-        <p class="cta-description">Get in touch and let's create something amazing together.</p>
+        <p class="cta-description">Tell us about your project and we'll bring your vision to life.</p>
         
         <div class="cta-actions">
-          <a href="mailto:hello@gkwebsites.com" class="btn btn-primary btn-lg">
-            <span>Start Your Project</span>
+          <a href="mailto:hello@gkwebsites.com" class="btn btn-primary btn-lg brief-btn">
+            <span>Send Your Brief</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </a>
-          <a href="tel:+1234567890" class="btn btn-outline-light btn-lg">
-            <span>Schedule a Call</span>
+          <a href="#brief-form" class="btn btn-outline-light btn-lg">
+            <span>Quick Brief Form</span>
           </a>
         </div>
         
@@ -466,6 +466,83 @@
           </div>
           <p class="trust-text">Join <strong>500+</strong> satisfied clients</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Brief Form Section -->
+  <section class="brief-section" id="brief-form">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-label">Send Us Your Brief</span>
+        <h2 class="section-title">Tell Us About <span class="highlight-text">Your Project</span></h2>
+        <p class="section-description">Fill out a few details and we'll get back to you within 24 hours.</p>
+      </div>
+      
+      <div class="brief-form-container">
+        <form class="brief-form" id="quickBriefForm">
+          <div class="brief-form-row">
+            <div class="form-group">
+              <label for="brief-name">Your Name</label>
+              <input type="text" id="brief-name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="brief-email">Email Address</label>
+              <input type="email" id="brief-email" name="email" placeholder="john@company.com" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="brief-company">Company (Optional)</label>
+            <input type="text" id="brief-company" name="company" placeholder="Your Company Name">
+          </div>
+          
+          <div class="form-group">
+            <label for="brief-needs">What do you need?</label>
+            <textarea id="brief-needs" name="needs" rows="4" placeholder="Tell us about your project - what are you looking to build?" required></textarea>
+          </div>
+          
+          <div class="brief-form-row">
+            <div class="form-group">
+              <label for="brief-budget">Budget Range</label>
+              <select id="brief-budget" name="budget" required>
+                <option value="">Select your budget</option>
+                <option value="under-5k">Under £5,000</option>
+                <option value="5k-10k">£5,000 - £10,000</option>
+                <option value="10k-25k">£10,000 - £25,000</option>
+                <option value="25k-50k">£25,000 - £50,000</option>
+                <option value="50k-plus">£50,000+</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="brief-timeline">Timeline</label>
+              <select id="brief-timeline" name="timeline" required>
+                <option value="">When do you want it done?</option>
+                <option value="asap">ASAP - Urgent</option>
+                <option value="1-month">Within 1 month</option>
+                <option value="3-months">1-3 months</option>
+                <option value="6-months">3-6 months</option>
+                <option value="flexible">Flexible timeline</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="brief-details">Anything else we should know?</label>
+            <textarea id="brief-details" name="details" rows="3" placeholder="Links to sites you like, specific features, or any questions..."></textarea>
+          </div>
+          
+          <div class="brief-form-actions">
+            <button type="submit" class="btn btn-primary btn-lg">
+              <span>Send Your Brief</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <p class="form-note">We'll get back to you within 24 hours</p>
+          </div>
+        </form>
       </div>
     </div>
   </section>
